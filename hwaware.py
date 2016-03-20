@@ -3,6 +3,9 @@
 from flask import Flask
 
 DEBUG = True
+DATABASE = '/home/ved/Documents/'
+USERNAME = 'root'
+PASSWORD = 'root'
 
 app = Flask(__name__)
 app.config.from_object(__name__)
