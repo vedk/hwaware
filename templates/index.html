@@ -16,7 +16,24 @@
 	<td width="15%"></td> <!-- padding on the left -->
 
 	<td width="*"> <!-- the table of homework goes here -->
-	  
+	  <!-- table of controls -->
+	  <form method="POST" action="/">
+	    <table width="100%">
+	      <tr>
+		<td>
+		  Class:&nbsp;
+		  <select>
+		    {% for k in classes_data|sort %}
+		    <option value="{{ k }}">{{ classes_data[k] }}</option>
+		    {% endfor %}
+		  </select>
+		</td>
+		
+	      </tr>
+	    </table>
+	  </form>
+
+	  <!-- homework table -->
 	  <table width="100%" border="1">
 	    <tr>
 	      <th>Date</th>
