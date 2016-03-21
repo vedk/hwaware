@@ -13,9 +13,9 @@
 
     <table width="100%">
       <tr>
-	<td width="5%"></td> <!-- padding on the left -->
+	<td width="15%"></td> <!-- padding on the left -->
 
-	<td width="85%"> <!-- the table of homework goes here -->
+	<td width="*"> <!-- the table of homework goes here -->
 	  
 	  <table width="100%" border="1">
 	    <tr>
@@ -33,11 +33,22 @@
 	  </table>
 	</td>
 
-	<td width="10%" align="right"> <!-- the nav links go here -->
+	<td width="15%" valign="top"> <!-- the nav links go here -->
+	  <table align="right" style="text-align: right">
+	    <tr>
+	      <td><b><a href="#">Give Homework</a></b></td>
+	    </tr>
+	    <tr>
+	      <td><a href="#">Download CSV</a></td>
+	    </tr>
+	    <tr>
+	      <td><a href="#">About this site</a></td>
+	    </tr>
+	  </table>
 	</td>
       </tr>
     </table>
     <hr/>
-    <center>{{ footertext|safe }}</center>
+    <center>{{ footertext|safe }}</center> <!-- the footer for copyright -->
   </body>
 </html>
