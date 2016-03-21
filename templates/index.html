@@ -18,15 +18,23 @@
 	<td width="*"> <!-- the table of homework goes here -->
 	  <!-- table of controls -->
 	  <form method="POST" action="/">
-	    <table width="100%">
+	    <table width="100%" border="0">
 	      <tr>
-		<td>
+		<td width="33%">
 		  Class:&nbsp;
-		  <select>
+		  <select name="usrclass">
 		    {% for k in classes_data|sort %}
 		    <option value="{{ k }}">{{ classes_data[k] }}</option>
 		    {% endfor %}
 		  </select>
+		</td>
+
+		<td align="center" width="*">
+		  Since:&nbsp;<input type="number" name="nsince" /> day(s)
+		</td>
+
+		<td align="right" width="33%">
+		  <input type="submit" value="Get me the homework!" />
 		</td>
 		
 	      </tr>
@@ -59,7 +67,7 @@
 	      <td><a href="#">Download CSV</a></td>
 	    </tr>
 	    <tr>
-	      <td><a href="#">About this site</a></td>
+	      <td><a href="{{ url_for('on_about') }}">About this site</a></td>
 	    </tr>
 	  </table>
 	</td>

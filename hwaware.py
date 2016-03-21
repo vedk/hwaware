@@ -11,6 +11,7 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 
 from index import *
+from about import *
 
 if __name__ == '__main__':
     app.run()
