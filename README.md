@@ -1,5 +1,6 @@
 # hwaware
-A Python webapp to give and access homework
+A Python webapp to give and access homework.
+I am currently using [Flask](http://flask.pocoo.org).
 
 It isn't comeplete yet.
 
