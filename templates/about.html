@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>About hwaware</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
   </head>
   <body>
     <center>
@@ -15,13 +16,13 @@
 
     <table>
       <tr>
-	<td width="3%"></td>
+	<td width="9%"></td>
 	<td width="*">
-	  <font size="32">L</font>ong long ago (about {{ longness }} days ago) there was a student who would forget the homework given
+	  <span>L</span>ong long ago (about {{ longness }} days ago) there was a student who would forget the homework given
 	  in the school <i>once</i> in a while, so he would have to do it at five in the morning or at
 	  seven in the school.
 	</td>
-	<td width="3%"></td>
+	<td width="9%"></td>
       </tr>
     </table>
   </body>
