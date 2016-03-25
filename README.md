@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/vedk/hwaware.svg?branch=master)](https://travis-ci.org/vedk/hwaware)
 # hwaware
 ## What  is it?
 **hwaware** is a Python webapp which addresses a very common issue of students: Forgetting the homework.
