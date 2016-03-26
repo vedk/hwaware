@@ -1,3 +1,15 @@
+.orange-glow {
+    text-shadow: 0px 0px 7px orange;
+}
+
+.blue-glow {
+    text-shadow: 0px 0px 9px blue;
+}
+
+.green-glow {
+    text-shadow: 0px 0px 7px green;
+}
+
 .drop-cap {
     float: left;
     width: 0.7em;
