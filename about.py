@@ -2,10 +2,11 @@
 
 from flask import render_template
 from hwaware import app
-from time import strftime
+from datetime import datetime
 
 @app.route('/about')
 def on_about():
-    year = int(strftime('%Y'))
-    past = (year - 2015) * 365
-    return render_template('about.html', longness=past)
+    then = datetime(2016, 3, 21, 5, 15, 46)
+    secondspast = (datetime.now() - then).total_seconds()
+    
+    return render_template('about.html', longness=secondspast)
