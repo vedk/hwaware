@@ -27,7 +27,7 @@
 		<td width="33%">
 		  Class:&nbsp;
 		  <select name="usrclass">
-		    {% for k in classes_data|sort %}
+		    {% for k in classes_data %}
 		    <option value="{{ k }}">{{ classes_data[k] }}</option>
 		    {% endfor %}
 		  </select>
