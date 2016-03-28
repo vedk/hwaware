@@ -8,7 +8,9 @@ classes = {'10F': '10th Faith',
            '10C': '10th Courage',
            '10H': '10th Hope',
            '9F' : '9th Faith',
-           '9H' : '9th Hope'}
+           '9H' : '9th Hope',
+           '8F' : '8th Faith',
+           '8H' : '8th Hope'}
 
 @app.route('/', methods=['GET', 'POST'])
 def on_index():
@@ -22,6 +24,7 @@ def on_index():
         try:
             usrclass = request.form['usrclass']
             since = int(request.form['nsince'])
+            print(usrclass)
         except ValueError:
             since = 3 # show the homework of the last three days by default
 
