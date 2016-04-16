@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/vedk/hwaware.svg?branch=master)](https://travis-ci.org/vedk/hwaware)
 # hwaware
+[![Build Status](https://travis-ci.org/vedk/hwaware.svg?branch=master)](https://travis-ci.org/vedk/hwaware)
 ## What  is it?
 **hwaware** is a Python webapp which addresses a very common issue of students: Forgetting the homework.
 This webapp provides an interface for teachers to give homework which is then stored in a database (maybe MySQL) and then when the site is opened, the homework is displayed in a table.
@@ -17,5 +17,5 @@ You can clone (`git clone https://github.com/vedk/hwaware.git`) the source once 
 
 ## Addition Notes
 - **THIS WEBAPP ISN'T EVEN 10% COMPLETE**
-- I plan to host this on [Google App Engine](https://cloud.google.com/appengine/) from where everyone will be able to access this webapp.
+- I plan to host this on [Heroku](https://www.heroku.com/), from where everyone will be able to access this webapp.
 
